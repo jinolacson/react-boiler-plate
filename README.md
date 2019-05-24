@@ -268,7 +268,7 @@ export default class Create extends Component {
 
 15. **List.js** should have:
 ```
-// Index.js
+// List.js
 
 import React, { Component } from 'react';
 import Axios from './Axios';
