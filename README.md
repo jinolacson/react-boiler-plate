@@ -53,11 +53,11 @@ REFERENCES.md
 2.  Run `sudo npm init` and type your answers to the questions or you can run `sudo npm init -y` to say yes to every question - you will get default settings
 3.  Install the following dependencies:
 ```
-sudo npm i react react-dom -S
+sudo npm install --save react react-dom bootstrap react-router-dom axios
 ```
 4.  Install the following dev dependencies:
 ```
-sudo npm i babel-core babel-loader babel-preset-env babel-preset-react css-loader html-webpack-plugin style-loader webpack webpack-cli webpack-dev-server bootstrap react-router-dom axios -D 
+sudo npm install --save-dev @babel/core babel-loader @babel/preset-env @babel/preset-react css-loader html-webpack-plugin style-loader webpack webpack-cli webpack-dev-server 
 ```
 5. Update your **package.json** `scripts` with the following:
 ```
