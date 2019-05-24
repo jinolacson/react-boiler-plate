@@ -43,7 +43,7 @@ REFERENCES.md
 1.  Clone this repo and put inside `htdocs`
 2.  Run `sudo npm install`
 3.  Run `sudo npm start`, **localhost:8080** will open up in your default browser
-4.  Start xampp server and create database with name **server** and import `server.sql`
+4.  Start xampp server and create database with name **reactdb** and import `server.sql`
 5.  Install **Allow-Control-Allow-Origin:** chrome plugin and enable resource sharing
 6.  Run `sudo npm build`, it will create **dist** for your production deployment
 
