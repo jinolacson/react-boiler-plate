@@ -67,7 +67,7 @@ sudo npm install --save-dev @babel/core babel-loader @babel/preset-env @babel/pr
 6. Create **.babelrc** file with the following configurations:
 ```
 {
-  "presets": ["env", "react"]
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
 }
 ```
 7. Create **webpack.config.js** file with the following configurations:
