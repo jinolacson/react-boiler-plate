@@ -1,18 +1,21 @@
 # Setup
+```
+1. OS version     : Ubuntu 18.04.2 LTS
 
-OS version	   : Ubuntu 18.04.2 LTS
-npm --version  : 6.8.0
-npx --version  : 10.2.0
-yarn --version : 1.15.2
+2. npm --version  : 6.8.0
 
-#  ES6 - ECMASCRIPT2015 or javascript6
+3. npx --version  : 10.2.0
+
+4. yarn --version : 1.15.2
+```
+
+# ES6 ECMASCRIPT2015 or javascript6
 ## BASIC:
-1. https://www.w3schools.com/js/js_es6.asp
-2. https://codeburst.io/es6-tutorial-for-beginners-5f3c4e7960be
+	1. https://www.w3schools.com/js/js_es6.asp
+	2. https://codeburst.io/es6-tutorial-for-beginners-5f3c4e7960be
 
 ## SETUP WITH BABEL:
-1. http://ccoenraets.github.io/es6-tutorial/setup-babel/
-
+	1. http://ccoenraets.github.io/es6-tutorial/setup-babel/
 
 # React JS useful resources
 
