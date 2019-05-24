@@ -57,9 +57,7 @@ sudo npm i react react-dom -S
 ```
 4.  Install the following dev dependencies:
 ```
-1. sudo npm i babel-core babel-loader babel-preset-env babel-preset-react css-loader html-webpack-plugin style-loader webpack webpack-cli webpack-dev-server -D
-
-2. sudo npm install bootstrap react-router-dom axios --save 
+sudo npm i babel-core babel-loader babel-preset-env babel-preset-react css-loader html-webpack-plugin style-loader webpack webpack-cli webpack-dev-server bootstrap react-router-dom axios -D 
 ```
 5. Update your **package.json** `scripts` with the following:
 ```
