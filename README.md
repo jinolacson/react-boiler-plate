@@ -464,3 +464,13 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 ```
+
+# Screenshots
+1. Create page <br />
+![Alt text](/screenshots/create-page.png "Optional Title")
+
+2. List Page <br />
+![Alt text](/screenshots/list-page.png "Optional Title")
+
+3. Allow-Control-Allow-Origin chrome plugin <br />
+![Alt text](/screenshots/cors-policy-plugin-enabled.png "Optional Title")
