@@ -1,4 +1,4 @@
-// Index.js
+// List.js
 
 import React, { Component } from 'react';
 import Axios from './Axios';
@@ -24,16 +24,16 @@ export default class Index extends Component {
             return <TableRow obj={object} key={i} />;
         });
     }
-
     render() {
       return (
         <div className="container">
-            <table className="table table-striped">
+            <table className="table table-striped" style={{ marginTop: 20 }}>
               <thead>
                 <tr>
                   <td>ID</td>
                   <td>Name</td>
                   <td>Port</td>
+                  <td colSpan='2'>Action</td>
                 </tr>
               </thead>
               <tbody>
