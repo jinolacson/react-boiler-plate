@@ -49,7 +49,7 @@ REFERENCES.md
 
 **If you prefer to install things yourself you can follow the instructions below**
 
-1. Create folder **reactdemo**
+1. Create folder **react-boiler-plate**
 2.  Run `sudo npm init` and type your answers to the questions or you can run `sudo npm init -y` to say yes to every question - you will get default settings
 3.  Install the following dependencies:
 ```
