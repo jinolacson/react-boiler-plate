@@ -4,9 +4,9 @@ A ready to use simple boilerplate crud demonstration using babel, bootstrap, web
 ## Basic setup
 ```
 OS version     : Ubuntu 18.04.2 LTS
-npm --version  : 6.8.0
-npx --version  : 10.2.0
-yarn --version : 1.15.2
+npm --version  : 6.9.0
+npx --version  : 10.2.0(optional)
+yarn --version : 1.15.2(optional)
 ```
 
 ### Initial folder structure
