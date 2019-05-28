@@ -52,7 +52,7 @@ webpack.config.js
 3.  Run `sudo npm start`, **localhost:8080** will open up in your default browser
 4.  Start xampp server and create database with name **reactdb** and import `server.sql`
 5.  Install **Allow-Control-Allow-Origin:** chrome plugin and enable resource sharing
-6.  Run `sudo npm build`, it will create **dist** for your production deployment and edit **.env** environment variables point to dist folder
+6.  For production deployment edit **.env** environment variables point **BASE_DIR='react-boiler-plate/dist/'** and run `sudo npm run build`  it will create **dist** folder
 
 **If you prefer to install things yourself you can follow the instructions below**
 
@@ -611,7 +611,7 @@ if(isset($_GET["id"]) && isset($_POST["name"]) && isset($_POST["port"])){
 
 25. Create **.gitignore** file and input **/node_modules/** and **/dist**.
 
-26. Create **.env** file and add **BASE_DIR='react-boiler-plate/'** for production change to **BASE_DIR='react-boiler-plate/dist/'**
+26. Create **.env** file, for development base folder add **BASE_DIR='react-boiler-plate/'** , for production folder change to **BASE_DIR='react-boiler-plate/dist/'**
 
 27. Create database **reactdb** and table **server** then import
 ```
