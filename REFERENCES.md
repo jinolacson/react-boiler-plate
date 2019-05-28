@@ -36,6 +36,19 @@
 ## DEPLOYMENT:
 	1. https://facebook.github.io/create-react-app/docs/deployment
 
+## REACT LIFECYCLE METHODS
+
+```
+componentWillMount()
+set the initial state in the constructor
+render()
+componentDidMount()
+setState()
+render()
+
+reference: https://www.codingame.com/playgrounds/8747/react-lifecycle-methods-render-and-componentdidmount
+```
+
 ## REACT BASIC
 	1. https://www.w3schools.com/whatis/whatis_react.asp
 	2. https://medium.freecodecamp.org/learn-react-js-in-5-minutes-526472d292f4
