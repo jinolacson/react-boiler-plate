@@ -1,18 +1,23 @@
 {
-  "name": "simple_webpack_boilerplate",
+  "name": "react-boiler-plate",
   "version": "1.0.0",
-  "description": "A ready to use simple webpack boilerplate",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jinolacson/react-boiler-plate"
-  },
+  "description": "A ready to use simple boilerplate crud demonstration using babel, bootstrap, webpack and axios.",
   "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinolacson/react-boiler-plate.git"
+  },
+  "keywords": [],
   "author": "jinolacson",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jinolacson/react-boiler-plate/issues"
+  },
+  "homepage": "https://github.com/jinolacson/react-boiler-plate#readme",
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",

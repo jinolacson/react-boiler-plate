@@ -66,10 +66,20 @@ sudo npm install --save react react-dom bootstrap reactstrap react-router-dom ax
 ```
 sudo npm install --save-dev @babel/core babel-loader @babel/preset-env @babel/preset-react css-loader html-webpack-plugin style-loader webpack webpack-cli webpack-dev-server 
 ```
-5. Update your **package.json** `scripts` with the following:
+5. Update your generated **package.json** with the following:
 ```
-"start": "webpack-dev-server --mode development --open",
-"build": "webpack --mode production"
+1. 
+"main": "src/index.js",
+  
+2. 
+"scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
+},
+
+3.
+"author": "jinolacson",
+
 ```
 6. Create **.babelrc** file with the following configurations:
 ```
