@@ -38,10 +38,12 @@ src/
   index.html
   index.js
 .babelrc
+.env
 .gitignore
 package.json
-webpack.config.js
+README.md
 REFERENCES.md
+webpack.config.js
 ```
 ## Instructions
 
@@ -50,7 +52,7 @@ REFERENCES.md
 3.  Run `sudo npm start`, **localhost:8080** will open up in your default browser
 4.  Start xampp server and create database with name **reactdb** and import `server.sql`
 5.  Install **Allow-Control-Allow-Origin:** chrome plugin and enable resource sharing
-6.  Run `sudo npm build`, it will create **dist** for your production deployment
+6.  Run `sudo npm build`, it will create **dist** for your production deployment and edit **.env** environment variables point to dist folder
 
 **If you prefer to install things yourself you can follow the instructions below**
 
@@ -58,7 +60,7 @@ REFERENCES.md
 2.  Run `sudo npm init` and type your answers to the questions or you can run `sudo npm init -y` to say yes to every question - you will get default settings
 3.  Install the following dependencies:
 ```
-sudo npm install --save react react-dom bootstrap reactstrap react-router-dom axios
+sudo npm install --save react react-dom bootstrap reactstrap react-router-dom axios dotenv-webpack
 ```
 4.  Install the following dev dependencies:
 ```
@@ -77,8 +79,17 @@ sudo npm install --save-dev @babel/core babel-loader @babel/preset-env @babel/pr
 ```
 7. Create **webpack.config.js** file with the following configurations:
 ```
-const HtmlWebPackPlugin = require("html-webpack-plugin");
 
+/**
+ * Require necessary plugins
+ */
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const Dotenv = require('dotenv-webpack');
+
+/**
+ * Instantiate plugins
+ */
+const dotenv = new Dotenv();
 const htmlWebpackPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html",
   filename: "./index.html"
@@ -117,7 +128,7 @@ module.exports = {
       }
     ]
   },
-  plugins: [htmlWebpackPlugin]
+  plugins: [htmlWebpackPlugin,dotenv]
 };
 ```
 8. Create **src** folder with **index.js** **index.html** **App.js** files.
@@ -146,6 +157,8 @@ ReactDOM.render(<Index />, document.getElementById("index"));
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>React + bootstrap + Webpack4 + axios</title>
+  
+  <!-- Include boostrap css-->
   <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
@@ -157,7 +170,7 @@ ReactDOM.render(<Index />, document.getElementById("index"));
 11. **App.js** should have:
 ```
 // App.js
-
+// 
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
@@ -165,13 +178,13 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
  * Load components
  */
 import Create from './components/Create';
-import Edit from './components/Edit';
-import List from './components/List';
+import Edit   from './components/Edit';
+import List   from './components/List';
 
 class App extends Component {
   render() { 
     return (
-      <Router>
+      <Router basename={process.env.BASE_DIR}>
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <Link to={'/'}  className="navbar-brand">Simple Boilerplate(React+webpack+babel+axios+bootstrap)</Link>
@@ -598,7 +611,9 @@ if(isset($_GET["id"]) && isset($_POST["name"]) && isset($_POST["port"])){
 
 25. Create **.gitignore** file and input **/node_modules/** and **/dist**.
 
-26. Create database **reactdb** and table **server** then import
+26. Create **.env** file and add **BASE_DIR='react-boiler-plate/'** for production change to **BASE_DIR='react-boiler-plate/dist/'**
+
+27. Create database **reactdb** and table **server** then import
 ```
 -- phpMyAdmin SQL Dump
 -- version 4.8.1
