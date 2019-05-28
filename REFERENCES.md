@@ -72,6 +72,31 @@ reference: https://www.codingame.com/playgrounds/8747/react-lifecycle-methods-re
 2. https://www.truecodex.com/course/react-js/crud-4-create-insert-delete-update-in-react-js-using-api
 
 
+## Form Validation libary resources example
+```
+https://github.com/dockwa/simple-react-validator
+https://www.npmjs.com/package/formsy-react
+https://www.npmjs.com/package/react-validation
+https://github.com/selbekk/calidation
+https://jaredpalmer.com/formik/
+```
+
+## CSS frameworks
+```
+https://reactstrap.github.io/
+https://react-bootstrap.github.io/getting-started/introduction
+http://react-toolbox.io
+https://onsen.io/
+https://ant.design/
+https://material-ui.com/
+https://react.foundation/
+```
+
+## CSS FRAMEWORKS: 
+```
+https://www.codeinwp.com/blog/react-ui-component-libraries-frameworks/
+```
+
 # Common issues encountered
 
 1. Fixing the "cannot GET /URL" error on refresh with React Router and Reach Router (or how client side routers work)
