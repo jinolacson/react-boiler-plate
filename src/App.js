@@ -1,5 +1,5 @@
 // App.js
-
+// 
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
@@ -7,13 +7,13 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
  * Load components
  */
 import Create from './components/Create';
-import Edit from './components/Edit';
-import List from './components/List';
+import Edit   from './components/Edit';
+import List   from './components/List';
 
 class App extends Component {
   render() { 
     return (
-      <Router>
+      <Router basename={process.env.BASE_DIR}>
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <Link to={'/'}  className="navbar-brand">Simple Boilerplate(React+webpack+babel+axios+bootstrap)</Link>
