@@ -96,10 +96,6 @@ https://react.foundation/
 ```
 https://www.codeinwp.com/blog/react-ui-component-libraries-frameworks/
 ```
-## Basic JWT integration with create-react-app
-```
-https://hptechblogs.com/using-json-web-token-react/
-```
 ## ACL example
 ```
 https://www.npmjs.com/package/@casl/react
