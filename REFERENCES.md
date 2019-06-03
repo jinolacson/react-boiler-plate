@@ -110,6 +110,12 @@ https://github.com/enaqx/awesome-react
 https://reactcheatsheet.com/
 ```
 
+#Redux Basics
+```
+https://daveceddia.com/redux-tutorial/
+https://medium.com/backticks-tildes/setting-up-a-redux-project-with-create-react-app-e363ab2329b8
+```
+
 # Common issues encountered
 
 1. Fixing the "cannot GET /URL" error on refresh with React Router and Reach Router (or how client side routers work)
